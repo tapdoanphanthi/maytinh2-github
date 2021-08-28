@@ -1,0 +1,26 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bật tắt bóng đèn </title>
+</head>
+<body style="background-color: black;">
+    <img id="image" onclick="doi_mau_bong_den()" style="margin-left:300px; cursor:pointer;" src="pic_bulboff.gif "/>
+
+    <script type="text/javascript">
+    function doi_mau_bong_den(){
+        if (document.getElementById('image').src.endsWith("pic_bulboff.gif")) // Nếu dòng dưới là 'on' thì ấn lần nx sẽ là off  : Hàm ENDSWITH là xác định 1 chuỗi đầu trở về : true hoặc false  
+            // off thì on  
+         document.getElementById('image').src="pic_bulbon.gif";  // nghĩa là lấy cái id của bóng đèn tắt 
+                                                                // khi ấn vào bóng đèn tắt xảy ra sự kiện onclick bóng đèn bật 
+                // on thì off 
+                else{
+                    document.getElementById('image').src="pic_bulboff.gif";  
+                }
+
+    }
+    </script>
+</body>
+</html>
